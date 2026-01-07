@@ -11,7 +11,7 @@
 ## 雲端部署
 
 * **專案連結**：
-    * **前端**：Github page (連結請在此貼上)
+    * **前端**：https://denise97220.github.io/YouTube-replica/
 
 
 ## 前端開發工具
