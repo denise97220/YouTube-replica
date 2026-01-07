@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# Youtube Replica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+復刻 Youtube 首頁，還原首頁的畫面與功能列，包含影片顯示、滑鼠移入後播放等。
 
-Currently, two official plugins are available:
+## 產品功能
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* 復刻 Youtube 首頁，還原首頁的畫面與功能列。
+* 包含影片顯示、滑鼠移入後播放等。
+* RWD 響應式網站設計，支援多種裝置介面瀏覽。
 
-## Expanding the ESLint configuration
+## 雲端部署
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* **專案連結**：
+    * **前端**：Github page (連結請在此貼上)
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname
-    }
-  }
-})
-```
+## 前端開發工具
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+* **React.js**
+* **TypeScript**
+* **Tailwind**
+* **Vite**
+* **Git**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules
-  }
-})
-```
